@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="PAC (an eLitmus division) enables rapid and comprehensive assessment of talent across a wide range of technology domains, be it for hiring or employee evaluations.">
+    <meta name="keywords" content="elitmus, PAC, paclabs, assessment, assessments, talent assessment, lateral hiring, talent standards, human capital, assessment event, skill assessment, aptitude test, IT skills, language skills, cognitive skills, Analytical Ability, Baseline Aptitude, Software Engineering Aptitude, coding challenge, subjective assessment, multiple choice questions, MCQ" />
+    <meta name="author" content="eLitmus">
+    <meta name="robots" content="index, follow">
+    
+
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABACAYAAACtK6/LAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH3wETAyc6Tv8AFQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAGZ0lEQVRo3u2ba2xURRiGn9MtVgtaHFERHAMIFAXUKKIhKChKg2higrcYjHfxR6OCk1RCFOMlIk4EDEajxqiIFzBA1GqigoIXUDHeMAgqCOMdGO5tKWWPP3aWrJvd7Tl7dtut9E36o92eM+ed7/tm3u+dsx6liNr6SmAB0K9II3jAe+WUJsqAAcDAIo6xtozSRbzI9/dLmfwRxR6gVNO+EbgR6BYxc84AHspe+LX1/YEuGetu7vgf6MiorR8NfJjl00XlwPtAnww1VuZWxY6MWGtpX5ZC9pDCIUe4k3wn+U7yneQ7yXckWCU7rry1SnYBegM9gUHAmcCpwMnACUBF2iVbgQ3At8DHwBqr5K9Cm+3JyRDalBb59IeySg4HrgNGOJLHB8zAHu5nOHAr0ARstkouAx4U2vwRdgLK24BwzCpZBUwEprpIFwKHu35/IHC7VfIeYDawr91qPpW4VfJi4EVgEzCngMQzYQawwip5SrtEPkncKjkYeAUY0saL6nBgmVVyiNBmW1tHfoBV8hlgDXBaO+0mPYFPHT2/aOStkge3HKvkNDforSWwE1bvVr1m41c1FyXtU1K8u1VyEXBBiMv3A3uBzW7b+hlodltfDVAd0cUhjnf5mNgnXy2NDy4seaukJ7TxrZI1wAshF7LXgNeBT4Q2WzN8Ps0q2Q+4E7gjAn85rGzjoIKSdxH3rZKTgKdDXLoJGCu0Wd+aahPabADutEp+CczLV73287YMS5hRfvSaT0n1qY64H/DS54U2fYQ263PJUqHNf0SK0OZlYHHeQsBr7pHLiSvPg/h04H735yAe31ShzYzWJGhK1JO/jwLuBkbmwfuDCloen9NS0xXiCyORTyE+KYV40IjPSF6fTjxtMg4DhFVyglOCvUOM0wRY4FXgUaHNFgBq+4yJtNqnED/byceg+AeoyxVtd99jnPQd56LcNcQYBpgPvAd8KrRp/u+ken6uymy15lMe/E2np4PigfTVPLXerZJnWCXfcd3abLfFBSX+EXCe0OYkV1YfJoknn9mvo+JEb1tl5H3eKjkv5Ha2V2jzZFoNdwHOskpe5CJdHeJ+DcCXwLvAfKHNb+nBsUr2Aoa6bvGyXQfiVV3Zd3fUtB8JXBlywXk25fojgTrgatfChknrLcDDwBLgb6FNU9qzdQOud5PZFxC406cY8bp18epteLsiRf7mDMZCa1jlVuupLp2DwneEvwYeEdosTyNb5Xr6i4CbXCOTMfO66T9nUrv7wrwj7z9MbPt2rs1jq3kCOC7kNQuAN4CVqWltlewOXOIm8XRgcICgXeEYeHmSL4cdR1/ltqCwCEp8O4lT1KeENo0ZFsUKJ4XHhhh7MbA0Yj9fTpN/2HVF6LjWAcuBBUKbpVm2v+RCdn5I4luAu4Q2+6M5OX4sHqdsVAFJLwLOBc4R2kxKEs8kd90EHOW21zAYKbTZHNTZzU7ea8CHyghk97goTwe6C20mCG0+B3Zm0RGp3kBXEufqQXXFPuDSZO8Q1MQspns7WWjzXLpSzKXtXcS7AG+RsLKD4hqhTX1Y9zZH2lfiJaKXL+6zSh6bKcKZFB/gWSWHAH+FMEYaXBktyce3z5H2LWUx4u9GMROAz6ySE139Zqttz2mCp4HvnFAJgjXAaKHNF/kQbyXt91Ph7ZzZ4B97ZYQJ6O+cnp1WydVOk290YuZEJ0VHAkeF7BteBGqFNnuyZVVE8nG8x5pWW8U3JN5qyhcxF82xIbetTPibxOnMk4U4qwvi5NxLaWAWMCy9YSoqeaHN28DMdiLcAqwEegttpqTK3kKgVfJuMakDpgAH2oh0ozMua4Q2I5KHkIVGIAPTTcAs1y//WkTS24DJzju4QWizrDXvLwrKA6R96gSsBfpaJW8BbiNxQloVYfytwB/OqJiXbGHTo1wM4qEUXmrDIbR5zir5Eon34YcCY5xuPyVHF9gC/AR8D6x2hH8HfhfaNGQxNYuKUPI2zVNvtkr+KLT5EViYViY9nGPjA7uTb09kk7RtEeWCa/tsVrQzLreWEtG8F7x8J6OUiBadfEdDJ/lO8p3kDy2U/8/5+Qf78zSrBoi3Dfnaepg7vj3IryLxSmsm7PKord8EnJTlH8aR+ZtXQeEBO5g7fkVHS3ufxKloVKzNMfslu+AV6mtljaW82pe14wS3e9qvI+HP+0W4fwz4pVTJ/wuoOWeE1DfLawAAAABJRU5ErkJggg==">
+
+    <title>PAC - Talent Assessment</title>
+
+    <!--
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    -->
+    <link href="../../css/pacsite.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <!--
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['geochart']}]}"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> -->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="logo" alt="PAC Logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAMAAAD0WI85AAAA21BMVEUAAAD/////////////////////+Oz/////////rAD/////////////rAD/qgD/////////////rAD/rQD/////////rAD/////rAD/////////rAD/rAD/////////rAD/////////////////qQD/rQD/////////////rAD/rAD/////////rAD/////////rAD/rAD/rAD/////////////////////////rAD/rAD/////rAD/rQD/rAD/////////rAD/rAD/rAD/rAD/rAD/rAD/////rABiHdgtAAAAR3RSTlMAoDfrp8cDCg+8mfOKWgaBevrbxcC5ibMfXWWAZsysPxnd11gP7tIxKvxwUOOPcD0rsNRrJBQGRkA2UZIWoZtLH/an5njMSGeGs/wAAAseSURBVHja7Jldj6IwFIZfQD4CJGACIZhgRBIkgcAFAiZeyN35//9oZdXiMgUcNLub7D4XM4YyTJ+WnnNa8Z///Oc//yaaiqXw/rLWFPwRGgq+717kghxKazJiT7ejBE8IdMAiohUf3bTL6FJomMEjEvEdqo1DA4KyYpNk0AmLMGmaWPePGOdIRAJe5+SticN6e1Ee3UmxCFXTksjKaIpso2CEc9eL6mUNp3+mI9h+E21sIbxfMA/YWdcPG7xBtaJJQp+vohp0xcZLtEwjzDX07Db7++U1e9pyXHogXccqOrSFbzvUEyfgUFJHpuAFNgbdcNIv9zcOMUy8RUQPRDAS0+j9eNHkPpQpZtG8x8o+gEfJ/pOOt1DXHBHguGcmxokTe2+4mGMXP7pZg0/7uGOL98i4ItC83uSCAawtwTTHkG7kE+s0YKPyFjFfBErQmwzDk0B3zjMeEt2wMIEmU0eA93BGRJCsaay/IlNUJ3v4eD9XmGT30zfEe2zHRGD3eWuYG9lslRhHcfsZneby8y68h8BEuMmCvxA3LDpjnDOxBTKHTleUj4v0TYzjmOMJYxQsDdaYQ+ueVwEQTav9vMiFGBFnCKeDZs2iSIpnNDvpLE17hyes22CJYVpm6sdFFINoJOwc2PLZgY9N3GRTBFkKNPvU3iuDKREBoQSc9KMi/Zrmxx25V+RSGfznFpqbAl4ExMVgShogKAA9/7yIR6OL2mflbA0e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"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../../index.html#contact" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" style="width: 100%; padding: 0px;">
+          <div class="intro-heading-cont">
+            <div class="intro-heading" style="padding-bottom: 0px;">Establishing Global Standards for Talent</div>
+	    <div class="intro-heading-add" style="padding-top: 0px;">5 Million assessments, 29 Countries, 3 Languages</div>
+          </div>
+          <div id="myCarousel1" class="carousel slide" data-ride="carousel" style="background-color: #333333; height: 400px;">
+          <!-- Indicators -->
+            <ol class="carousel-indicators" style="display: none;">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox" style="display: none;">
+              <div id="carousel-item1" class="item active">
+                <!-- <div style="position: relative; height: 100%;"> -->
+                  <!-- <div id="mapchart" style="position: absolute;"></div> -->
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h2>Deploy across geographies and languages</h2>
+                      <p class="large" style="display: inline-block" >English, Mandarin, Japanese &nbsp; <a class="btn btn-lg btn-primary" href="#deploygeolang" role="button" data-toggle="modal">Learn How</a></p>
+                    </div>
+                  </div>
+                <!-- </div> -->
+              </div>
+              <div id="carousel-item2" class="item">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2>Maximize Human Capital</h2>
+                    <p class="large" style="display: inline-block">Get better people, Do it in lesser time. &nbsp; <a class="btn btn-lg btn-primary" href="#hiringeff" role="button" data-toggle="modal">Learn How</a></p>
+                  </div>
+                </div>
+              </div>
+              <div id="carousel-item3" class="item">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2>Standardise Competency Benchmarking</h2>
+                    <p class="large" style="display: inline-block" >Ensure QUALITY, Free yourself from biases. &nbsp; <a class="btn btn-lg btn-primary" href="#compbench" role="button" data-toggle="modal">Learn How</a></p>
+                  </div>
+                </div>
+              </div>
+              <div id="carousel-item4" class="item">
+                <!-- <div style="position: relative; height: 100%;"> -->
+                  <!-- <div id="indiachart" style="position: absolute;"></div> -->
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h2>Meet an immediate requirement</h2>
+                      <p class="large" style="display: inline-block" >Conduct multiple events tomorrow ! &nbsp; <a class="btn btn-lg btn-primary" href="#immreq" role="button" data-toggle="modal">Learn How</a></p>
+                    </div>
+                  </div>
+                <!-- </div> -->
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="display: none;">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="display: none;">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+            <!-- <div class="intro-text">
+		<div style="float: left; background-color: rgba(0,0,0,0.6); width: 100%; height: 450px; padding: 30px 40px;">
+                    <div class="intro-heading">Establishing global standards for talent</div>
+	            <p class="text-muted" style="color: #ffffff; font-size: 1.2em;">800,000 assessments, 100,000 placements, 20,000 certifications and counting...</p>
+                    <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                </div>
+             </div> -->
+        </div>
+    </header>
+    <!-- Services Section -->
+    <!--
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Solutions</h2>
+                    <h3 class="section-subheading text-muted">&nbsp;</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-road fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Experience</h4>
+                    <p class="text-muted">A wealth of experience spanning 10 years in assessments. We stay grounded and keep our eyes and ears open. Always learning and sharing with our customers ...</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-star fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading"><span style="font-style: italic;">First Customer</span> Promise</h4>
+                    <p class="text-muted">We are fanatical about support. Our most recent customer and our very first customer continue to receive identical support in both spirit and practice.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Customizability</h4>
+                    <p class="text-muted">We do have a lot of off-the-shelf stuff. But we understand clearly that one size may not fit all. Customizability is our commitment to our customers.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-filter fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Talent Analytics</h4>
+                    <p class="text-muted">Reports and scores are passe. How does test performance correlate with on-the-job performance? How does your talent compare with industry standards? We work with you to answer these questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Portfolio Grid Section -->
+    <section id="art1" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Facts &amp; Figures</h2>
+                    <h3 class="section-subheading text-muted">The year 2015-16 in the language of numbers!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+									<ul class="timeline">
+										<li>
+											<div class="timeline-image">
+												<h4>1M+<br>assessments<br>Delivered</h4>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-image">
+												<h4>800+<br>cities<br>Covered</h4>
+											</div>
+										</li>
+										<li>
+											<div class="timeline-image">
+												<h4>74<br>skills<br>Assessed</h4>
+											</div>
+										</li>
+									</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="art2" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">How We Cracked a Business Problem</h2>
+                    <h3 style="text-transform: none;" class="text-muted">The Client</h3>
+										<p>One of India's leading Hire-Train-Staff companies.</p>
+										<h3 style="text-transform: none;" class="text-muted">The Problem Statement</h3>
+										<p>An integrated workflow involving 4 discrete systems, to register candidates, deliver assessments, and collate performance data.</p> 
+										<h3 style="text-transform: none;" class="text-muted">The Solution</h3>
+										<img class="img-responsive img-centered" src="CaseStudy.jpg" style="width: 80%;">
+										<p>A platform with our test engine as the center piece was integrated with the client website, a third party CRM, and a third party spoken english test engine to enable and automate the following high-level workflow:</p>
+										<ol>
+											<li>Candidate registers on the client website.</li>
+											<li>Once the candidate is eligible to take the test, he/she is redirected to the PAC engine, which is white-labelled for the client (the candidate believes that he/she is still on the client's platform!)</li>
+											<li>Post completing the MCQ test, the candidate is provided with credentials to attempt the spoken english test, after which, the test scores are pulled into the PAC engine. Finally, the candidate scores (including the spoken english scores) are transferred to the third party CRM.</li>
+									</ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="art3" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">The Brand Shindig</h2>
+										<h3 class="text-center section-subheading text-muted">Magazine surveys are pass&eacute;, here's our very own truth (and fact) on some of India's best known engineering brands!</h3>
+										<p>We, on behalf of clients, tested critical masses of students across some of India's favourite engineering institutes on Aptitude (Quantitative and Logical skills). These were serious tests, with a much sought after offer letter at stake.</p>
+										<h4 class="section-subheading text-muted" style="text-transform:none;">Observation Checkpoint 1</h4>
+										<p>Let us see how the NITs performed</p>
+										<p>
+										<img class="img-responsive img-centered" src="Brand1.png">
+										<ul>
+											<li>The <strong>blue line</strong> tracks the number of test takers from an NIT, expressed as a percentage of the total pool of test takers across all the NITs listed here. For example, if the total pool of test takers across all these NITs were to be 1000, then NIT Surathkal had 80 (8%) test takers.</li>
+											<li>The <strong>maroon line</strong> tracks the the number of test takers from an NIT in the top 5% (overall), expressed as a percentage of the total pool of test takers who are in the top 5%, across all the NITs listed here. For example, if the total pool of test takers in the top 5% were to be 100, then NIT Surathkal had 15 (15%) test takers in that top 5% pool.</li>
+										</ul>
+										<h4 class="section-subheading text-muted" style="text-transform:none;">Conclusion 1</h4>
+										<p>NIT Trichy and NIT Surathkal punch far above their weight, contributing disproportationately to the top 5%. NITs Patna and Agartala, on the other hand, appear to be too far out to the East!</p>
+										<h4 class="section-subheading text-muted" style="text-transform:none;">Observation Checkpoint 2</h4>
+										<p>So far so good, pretty much as per script. But let's pump up the volume a bit, and bring in THE BITS to the party! And this is what we see:</p>
+										<img class="img-responsive img-centered" src="Brand2.png" width="786px">
+										<h4 class="section-subheading text-muted" style="text-transform:none;">Conclusion 2</h4>
+										<p>Now that's what we call entering with a bang! All the 3 BITS campuses have outperformed the top 3 NITs, and that too by a fair margin.</p>
+										<h4 class="section-subheading text-muted" style="text-transform:none;">Observation Checkpoint 3</h4>
+										<p>Party poopers do you say? The BITS gang is top-heavy? Well, that's possible, but let's try and throw some data on it, shall we?</p>
+										<img class="img-responsive img-centered" src="Brand3.png" width="786px">
+										<h4 class="section-subheading text-muted" style="text-transform:none;">Conclusion 3</h4>
+										<p>Now what have we here? Average percentage scores per campus. And as you can see, new battles do not necessarily produce drastically different results. The BITS outperform the NITs again, and again! The NITs have been <i>BIT</i>ten!</p>
+										<h4 class="section-subheading text-muted" style="text-transform:none;">Footnote</h4>
+										<p>Performance in aptitude tests does not always correlate perfectly with cognitive skills and IQ. Familiarity with the test format and content plays a part as well. However, it is unlikely that there would be a significant difference in familiarity between the top NITs and the BITS. Even if there is, lack of familiarity is hardly a defence in the fairest of laws in just lands! BITS and pieces then...</p>
+								</div>
+						</div>
+				</div>
+		</section>
+
+    <section id="art4" class="bg-light-gray">
+        <div class="container">
+        	<div class="row">
+          	<div class="col-lg-12">
+            	<h2 class="section-heading text-center">About Us</h2>
+							<h3 class="text-center section-subheading text-muted">The Tools we Employ to Solve your Problems</h3>
+							<div class="col-lg-12">
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+									<img src="PAC.png" class="img-responsive ">
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<p>Delivers multiple choice question tests. Tests are skill agnostic, can be chosen from the PAC test inventory, can be customized, can even be designed and delivered by the client.</p>
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+									<img src="CodeLitmus.png" class="img-responsive ">
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<p>Delivers programming tests with the ability to write, compile and execute a program in-browser. Programming problems can be chosen from the CodeLitmus test inventory, can be customized, can even be designed and delivered by the client.</p>
+								</div>
+							</div>
+							<p>&nbsp;</p>
+							<div class="col-lg-12">
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+									<img src="Content.png" class="img-responsive ">
+								</div>
+								<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+									<p>A comprehensive inventory of MCQ tests across language, aptitude, technical and behavioural skills. Tests can be customized to cater to specific needs or skill combinations.</p>
+									<p>A comprehensive set of programming problems covering algorithms, application development and debugging problems. CodeLitmus currently supports programming tests in C, C++, Java, Ruby, Perl, Python &amp; C#, along with database challenges in MySQL and Postgres.</p>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<p>&nbsp;</p>
+								<h3 class="text-center">And there's more We can Do for You</h3>
+								<h4 class="section-subheading text-muted" style="text-transform:none;">New assessment design and creation</h4>
+								<p>A rigorous process of content creation, three levels of reviews by experts, piloting and deployment with a minimum 4 week TAT.</p>
+
+								<h4 class="section-subheading text-muted" style="text-transform:none;">Assessment platform white-labelling &amp; integration with client website</h4>
+								<p>A white-labelled assessment platform enhances brand recall in both fresh graduates and experienced candidates.</p>
+								<h4 class="section-subheading text-muted" style="text-transform:none;">Integration of assessment reports with client HRMS</h4>
+								<p>Provides a seamless method of uploading performance data into internal systems.</p>
+								<h4 class="section-subheading text-muted" style="text-transform:none;">Assessment delivery support</h4>
+								<ul>
+								<li>Testing event management (e.g. on-campus, off-campus/lateral drives etc.).</li>
+								<li>Testing event coordination</li>
+								<li>Testing infrastructure provision at select locations in India</li>
+								</ul>
+								<h4 class="section-subheading text-muted" style="text-transform:none;">Assessment strategy consulting</h4>
+								<p>Includes assessment structure, level of difficulty, skill mix, campus selection among others.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section id="clients" style="padding: 10px 0px; ">
+        <div class="container">
+				<div style="display: none">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.sapient.com/" target="_blank">
+			<img id="img-sapient" src="/" class="img-responsive img-centered" alt="Sapient">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://www.blackrock.com/" target="_blank">
+			<img id="img-BlackRock" src="/" class="img-responsive img-centered" alt="BlackRock">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.mindtree.com/" target="_blank">
+			<img id="img-mindtree" src="/" class="img-responsive img-centered" alt="Mindtree">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.aon.com" target="_blank">
+			<img id="img-aon" src="/" class="img-responsive img-centered" alt="AON">
+                    </a>
+                </div>
+            </div>
+				</div>
+				<img src="../../img/phrase-new-opt.png" class="img-responsive img-centered" alt="clients">
+        </div>
+    </section>
+		<section id="contact" style="display: none; position: relative;padding: 0px;">
+        <div id="gmap1" style="background-image: url(../../img/map-office.jpg); height: 100%; width:100%; position: absolute;"> 
+        </div>
+        <div class="container" style="padding: 70px;">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">&nbsp;</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div style="display: inline-block;" class="g-recaptcha" data-sitekey=""></div>
+                                <div id="success"></div>
+                                <button id="messagesubmit" type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">&copy; 2005-<span id="curryr">2016</span> <a href="http://www.elitmus.com">eLitmus Evaluation Pvt. Ltd.</a></span>
+                </div>
+                <div class="col-md-4" style="visibility: hidden;">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#privacypolicy" data-toggle="modal">Privacy Policy</a>
+                        </li>
+                        <li><a href="#termsofuse" data-toggle="modal">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/script.js"></script>
+    -->
+    <script src="../../js/pacsite.min.js"></script>
+
+</body>
+
+</html>
